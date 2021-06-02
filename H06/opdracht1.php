@@ -21,10 +21,8 @@
 
 <table>
 <?php
-$servername = "localhost";
-$dbname = "schoolphp";
-$username = "root";
-$password = "";
+
+require_once ('login.php');
 
 try {
     $conn = new PDO("mysql:host={$servername};dbname={$dbname}", $username, $password);
